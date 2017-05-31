@@ -1,0 +1,73 @@
+<html>
+<head>
+<title>
+LOGIN FORM
+</title>
+</head>
+<style type="text/css">
+body{
+background-color: #b0e0e6;
+padding 20px;
+}
+.parent-div{
+height: 100vh; /*for demo only*/
+    background: teal;
+    overflow: auto;
+width: 960px;
+border: 2px solid red;
+margin: 0 auto;
+text-align: center;
+}
+.child-div{
+width: 80%;
+    background: #87ceeb;
+    margin-top: 40px;
+width: 500px;
+border: 2px solid green;
+margin: 0 auto;
+text-align: center;
+}
+</style>
+<body>
+<br><br><br><br>
+<div class="child-div">
+<form name="myForm" method="post" action="/cgi-bin/check.py"  >
+<hr>
+  <b>USERNAME</b><br>
+<br>
+  <input style="color: black;
+    font-family: Serif;
+    font-size: 100% " type="text" placeholder="Enter Username" name="firstname"><br><br>
+  <b>PASSWORD</b><br>
+<br>
+  <input style="color: black;
+    font-family: Serif;
+    font-size: 100%" type="password" placeholder="Enter Password" name="lastname">
+<br>
+<br>
+<input type="submit" value="Submit">
+<br>
+<br>
+<input type="reset" value="Reset">
+<hr>
+
+</form> 
+
+</div>
+<script>
+function validateForm() {
+    var x = document.forms["myForm"]["firstname"].value;
+    var y= document.forms["myForm"]["lastname"].value	
+    if (x != "atul") {
+        alert("Username is incorrect!!");
+        return false;
+    }
+if(y!="123"){
+	alert("Password is incorrect!!");
+        return false;
+	}
+}
+
+</script>
+</body>
+</html>

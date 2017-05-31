@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>HDFS SERVICES</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/static/c1.css">
+  <script src="/static/j2.js"></script>
+  <script src="/static/j3.js"></script>
+</head>
+<style type="text/css">
+body{
+background-color: #b0e0e6;
+padding 20px;
+}
+</style>
+<body>
+
+<div class="container">
+  <h2>LIST OF AVAILABLE CHOICES</h2>
+  <!--<p>SELECT YOUR NAMENODE</p><-->
+  <form method="post" action="/cgi-bin/check1.py">
+    <div class="radio">
+      <label><input type="radio" name="op" value='1'>MANUAL SETUP</label>
+    </div>
+    <div class="radio">
+      <label><input type="radio" name="op" value='2' >AUTOMATIC SETUP</label>
+    </div>
+	<input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
+
+
